@@ -18,6 +18,4 @@ self.addEventListener('activate', (event) => {
   console.log('activate event');
 });
 
-self.addEventListener('fetch', (event) => {
-  console.log('fetch intercepted for:', event.request.url);
-});
+self.addEventListener('fetch', (event) => event.respondWith(caches.match(event.request).then((cachedResponse) => cachedResponse || fetch(event.request))));

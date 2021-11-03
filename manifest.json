@@ -3,12 +3,12 @@
   "short_name": "Tech Today",
   "icons": [
     {
-      "src": "icon-512x512.png",
+      "src": "/pwa-test/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
-  "start_url": "pwa-test/index.html",
+  "start_url": "/pwa-test/index.html",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#FF0000",
